@@ -221,9 +221,9 @@ def load_hf_lm_and_tokenizer(
         )
     else:
         if device_map:
-            model = AutoModelForCausalLM.from_pretrained(model_name_or_path, device_map=device_map)
+            model = AutoModelForCausalLM.from_pretrained(model_name_or_path, device_map=device_map,offload_folder="offload")
         else:
-            model = AutoModelForCausalLM.from_pretrained(model_name_or_path)
+            model = AutoModelForCausalLM.from_pretrained(model_name_or_path, offload_folder="offload")
             if torch.cuda.is_available():
                 model = model.cuda()
         if load_in_half:
