@@ -6,7 +6,7 @@ cleantext==1.1.4
 datasets==2.14.3
 einops==0.7.0
 evaluate==0.4.0
-flash_attn==2.0.4
+# flash_attn==2.0.4
 Flask==2.1.2
 gym==0.24.0
 lxml==4.9.3

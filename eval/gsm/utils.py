@@ -7,7 +7,7 @@ from eval.gsm.math_tool import *
 
 MATH_OP = ['*', '/', '+', '-', '^']
 
-wolfram_app_id = os.environ["WOLFRAM_API_KEY"]
+wolfram_app_id = "9A953P-U48Y3T46PG"
 client = wolframalpha.Client(wolfram_app_id)
 
 def WA_result(question):
